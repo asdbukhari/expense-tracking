@@ -1,0 +1,14 @@
+.expenseBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expenseBox__title {
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+}
+.expenseBox__price {
+  text-decoration: underline;
+  color: green;
+}
