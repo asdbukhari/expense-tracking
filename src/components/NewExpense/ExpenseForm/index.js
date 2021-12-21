@@ -2,12 +2,12 @@ import styles from "./expense_form.module.css";
 import React, { useState } from "react";
 
 const ExpenseForm = (props) => {
-  const [name, setName] = useState("");
+  const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
 
   const inputNameHandler = (e) => {
-    setName(e.target.value);
+    setTitle(e.target.value);
   };
 
   const inputPriceHandler = (e) => {
@@ -20,16 +20,23 @@ const ExpenseForm = (props) => {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    const expenseDate = {
-      name,
-      price,
-      date,
-    };
-    props.onGenerateData(expenseDate);
 
-    setName("");
-    setPrice("");
-    setDate("");
+    if (title === "" || price === "" || date === "") {
+      alert("enter Values before submit");
+    } else {
+      // date = new Date(date);
+      const expenseDate = {
+        title,
+        price,
+        date: new Date(date),
+      };
+
+      props.onGenerateData(expenseDate);
+
+      setTitle("");
+      setPrice("");
+      setDate("");
+    }
   };
 
   return (
@@ -42,7 +49,7 @@ const ExpenseForm = (props) => {
             name="name"
             type="text"
             maxLength="10"
-            value={name}
+            value={title}
             onChange={inputNameHandler}
           />
         </div>
