@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Expenses from "./components/Expense/Expenses";
 import GenerateExpense from "./components/NewExpense/GenerateExpense";
-import SlideShow from "./components/Slider/SlideShow";
 
 let INITIAL_EXPENSE = [
   {
