@@ -8,13 +8,13 @@ let INITIAL_EXPENSE = [
     id: "e1",
     title: "Internet Packages",
     price: 600,
-    date: new Date(2021, 5, 17),
+    date: new Date(2021, 2, 17),
   },
   {
     id: "e2",
     title: "Bike Petrol",
     price: 2500,
-    date: new Date(2021, 5, 17),
+    date: new Date(2021, 3, 17),
   },
   {
     id: "e3",
@@ -26,7 +26,7 @@ let INITIAL_EXPENSE = [
     id: "e4",
     title: "Others",
     price: 5000,
-    date: new Date(2021, 5, 17),
+    date: new Date(2021, 7, 17),
   },
 ];
 
@@ -41,7 +41,6 @@ function App() {
   return (
     <>
       <GenerateExpense onSaveExpenseDate={saveExpenseDate} />
-      <SlideShow />
       <Expenses data={expenses} />
     </>
   );
