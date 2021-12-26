@@ -2,17 +2,17 @@ import React from "react";
 import ExpenseItem from "../ExpenseItem";
 
 const ExpenseList = (props) => {
-  let variableToRender;
-  // console.log(props);
   if (props.item.length === 0) {
-    variableToRender = <p>No object found</p>;
-  } else if (props.item.length > 0) {
-    variableToRender = props.item.map((expense) => {
-      return <ExpenseItem key={expense.id} expenseItem={expense} />;
-    });
+    return <h2>No object found</h2>;
   }
 
-  return <div>{variableToRender}</div>;
+  return (
+    <>
+      {props.item.map((expense) => {
+        return <ExpenseItem key={expense.id} expenseItem={expense} />;
+      })}
+    </>
+  );
 };
 
 export default ExpenseList;

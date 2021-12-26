@@ -20,19 +20,20 @@ const FilteredExpense = (props) => {
             name="year"
             id="year"
             className={styles.filter_expense_option}
+            value={props.selected}
             onChange={onSelectFilter}
           >
-            {/* <option className={styles.filter_expense_item} value="all">
-              All
-            </option> */}
-            <option className={styles.filter_expense_item} value="2020">
-              2020
+            <option className={styles.filter_expense_item} value="2022">
+              2022
             </option>
             <option className={styles.filter_expense_item} value="2021">
               2021
             </option>
-            <option className={styles.filter_expense_item} value="2022">
-              2022
+            <option className={styles.filter_expense_item} value="2020">
+              2020
+            </option>
+            <option className={styles.filter_expense_item} value="2019">
+              2019
             </option>
           </select>
         </div>

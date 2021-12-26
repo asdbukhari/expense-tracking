@@ -25,7 +25,7 @@ let INITIAL_EXPENSE = [
     id: "e4",
     title: "Others",
     price: 5000,
-    date: new Date(2021, 7, 17),
+    date: new Date(2020, 7, 17),
   },
 ];
 
