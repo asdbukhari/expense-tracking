@@ -9,7 +9,7 @@ To clone this repo, follow these steps:
 3. Run the following command:
 
 ```
-https://github.com/asdbukhari/react-practice.git
+https://github.com/asdbukhari/expense-tracking.git
 ```
 
 # Setting up a React App
