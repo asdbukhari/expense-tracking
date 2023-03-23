@@ -7,7 +7,7 @@
     "name": "Asad Bukhari",
     "url": "https://www.asdbukhari.com"
   },
-  "homepage": "https://asdbukhari.github.io/react-practice",
+  "homepage": "https://asdbukhari.github.io/expense-tracking/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
