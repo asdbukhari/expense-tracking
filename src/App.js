@@ -38,6 +38,7 @@ function App() {
 
   return (
     <>
+      <span className="notification">Practice project</span>
       <GenerateExpense onSaveExpenseDate={saveExpenseDate} />
       <Expenses data={expenses} />
     </>
