@@ -2,8 +2,8 @@ import React from "react";
 import ExpenseForm from "../ExpenseForm";
 import Card from "../../UI/Card";
 
-const GenerateExpense = (props) => {
-  const dataGeneratedHandler = (expenseData) => {
+const GenerateExpense = props => {
+  const dataGeneratedHandler = expenseData => {
     const expense = {
       ...expenseData,
       id: (Math.random() * (10 - 1 + 1)).toString(),

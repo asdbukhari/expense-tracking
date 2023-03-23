@@ -23,8 +23,7 @@ const SlideShow = () => {
                 style={{
                   backgroundImage: `url(${slide.url})`,
                   height: "500px",
-                }}
-              >
+                }}>
                 <span>{slide.caption}</span>
               </div>
             </div>

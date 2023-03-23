@@ -1,24 +1,24 @@
 import styles from "./expense_form.module.css";
 import React, { useState } from "react";
 
-const ExpenseForm = (props) => {
+const ExpenseForm = props => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
 
-  const inputNameHandler = (e) => {
+  const inputNameHandler = e => {
     setTitle(e.target.value);
   };
 
-  const inputPriceHandler = (e) => {
+  const inputPriceHandler = e => {
     setPrice(e.target.value);
   };
 
-  const inputDateHandler = (e) => {
+  const inputDateHandler = e => {
     setDate(e.target.value);
   };
 
-  const formSubmitHandler = (e) => {
+  const formSubmitHandler = e => {
     e.preventDefault();
 
     if (title === "" || price === "" || date === "") {
@@ -72,7 +72,7 @@ const ExpenseForm = (props) => {
             name="date"
             type="date"
             min="2019-08-01"
-            max="2022-12-30"
+            max="2023-12-30"
             value={date}
             onChange={inputDateHandler}
           />

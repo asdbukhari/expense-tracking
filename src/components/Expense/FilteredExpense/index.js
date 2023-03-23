@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./filteredExpense.module.css";
 
-const FilteredExpense = (props) => {
-  const onSelectFilter = (selectedOption) => {
+const FilteredExpense = props => {
+  const onSelectFilter = selectedOption => {
     props.onFilterYear(selectedOption.target.value);
   };
 
@@ -21,8 +21,10 @@ const FilteredExpense = (props) => {
             id="year"
             className={styles.filter_expense_option}
             value={props.selected}
-            onChange={onSelectFilter}
-          >
+            onChange={onSelectFilter}>
+            <option className={styles.filter_expense_item} value="2023">
+              2023
+            </option>
             <option className={styles.filter_expense_item} value="2022">
               2022
             </option>

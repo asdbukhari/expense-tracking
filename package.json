@@ -1,7 +1,12 @@
 {
-  "name": "react-complete-guide",
-  "version": "0.1.0",
+  "name": "Expence Tracking APP",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "email": "asadbukhari9895@gmail.com",
+    "name": "Asad Bukhari",
+    "url": "https://asdbukhari.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

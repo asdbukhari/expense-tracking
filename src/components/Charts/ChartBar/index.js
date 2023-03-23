@@ -1,6 +1,6 @@
 import styles from "./chartbar.module.css";
 
-const ChartBar = (props) => {
+const ChartBar = props => {
   let barChartHeight = "0%";
 
   if (props.maxValue > 0) {
@@ -11,10 +11,7 @@ const ChartBar = (props) => {
   return (
     <div className={styles.chartBar}>
       <div className={styles.chartBar_inner}>
-        <div
-          className={styles.chartBar_inner_fill}
-          style={{ height: barChartHeight }}
-        ></div>
+        <div className={styles.chartBar_inner_fill} style={{ height: barChartHeight }}></div>
       </div>
       <div className={styles.chartBar_label}>
         {props.label} {barChartHeight}

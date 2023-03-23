@@ -3,7 +3,7 @@ import Card from "../../UI/Card";
 
 import "./expenseItem.css";
 
-const ExpenseItem = (props) => {
+const ExpenseItem = props => {
   // console.log(props);
   return (
     <Card className="expenseBox">

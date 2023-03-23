@@ -32,9 +32,8 @@ let INITIAL_EXPENSE = [
 function App() {
   const [expenses, setExpenses] = useState(INITIAL_EXPENSE);
 
-  // console.log(expenses);
-  const saveExpenseDate = (expense) => {
-    setExpenses((prevExpense) => [...prevExpense, expense]);
+  const saveExpenseDate = expense => {
+    setExpenses(prevExpense => [...prevExpense, expense]);
   };
 
   return (
